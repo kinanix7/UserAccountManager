@@ -5,9 +5,9 @@ public class Main {
 
  public static void main(String[] args) {
 
-    ArrayList<Utilisateur> utilisateurs = new ArrayList<>();
-    ArrayList<Role> roles = new ArrayList<>();
-  Scanner scanner= new Scanner(System.in);
+        UserManagement userManagement = new UserManagement();
+      Scanner scanner= new Scanner(System.in);
+
 
 
       while (true){
@@ -23,12 +23,12 @@ public class Main {
          String choix = scanner.nextLine();
 
          switch (choix){
-          case "1": break;
-          case "2": break;
+          case "1":userManagement.ajouterUtilisateur(); break;
+          case "2":break;
           case "3": break;
           case "4": break;
-          case "5": break;
-          case "0": System.out.println("Goodbye!");break;
+          case "5":userManagement.displayUsers(); break;
+          case "0": System.out.println("Goodbye!"); System.exit(0); break;
             default:
              System.out.println("Choix invalide!");
          }

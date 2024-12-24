@@ -38,10 +38,10 @@ public class Utilisateur extends Personne {
 
     @Override
     public String toString() {
-        return "ID : " + getId() +
-                "\n | Name : " + getNom() +
-                "\n | Age  : " + getAge() +
-                "\n | Email: " + email +
-                "\n | Role : " + role.getRoleName();
+        return  "\n     | ID : " + getId() +
+                "\n     | Name : " + getNom() +
+                "\n     | Age  : " + getAge() +
+                "\n     | Email: " + getEmail() +
+                "\n     | Role : " + role.getRoleName();
     }
 }
