@@ -26,7 +26,7 @@ public class Main {
           case "1":userManagement.ajouterUtilisateur(); break;
           case "2":break;
           case "3": break;
-          case "4": break;
+          case "4":userManagement.removeUser(); break;
           case "5":userManagement.displayUsers(); break;
           case "0": System.out.println("Goodbye!"); System.exit(0); break;
             default:
